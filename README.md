@@ -1,72 +1,42 @@
-# motorbike-frontend
+# Parking-Frontend
 
-This project is the **frontend** of the full-stack application [motorbike-shop-backend-nodejs](https://github.com/salvador-lopez/motorbike-shop-backend-nodejs), which provides the backend API for managing a motorbike e-commerce platform.
+This project is the **frontend** of a [parking spot availability app](https://github.com/ehsan1233/parking).
 
-Built with **Vue 3**, this frontend is developed with a strong focus on accessibility, modern developer experience, and scalability. The project uses **Vite**, **Pinia** for state management, **Storybook** for UI documentation, and includes a thorough ESLint setup.
+Built with **Vue 3**, this app uses the user's geolocation to display free parking spots within a 500-meter radius on a map powered by **Leaflet** and **OpenStreetMap** tiles. Users can also report newly discovered free parking spots.
 
-## 🚀 Goals
 
-- Deliver an accessible, modern, and responsive UI
-- Promote reusability and maintainability with component-driven design
-- Align tightly with the backend architecture for seamless integration
+Development was speeded up using [**Junie**](https://www.jetbrains.com/junie/), [**Continue.dev**](https://continue.dev/), and [**Ollama**](https://ollama.com/), enabling AI-assisted workflows and local language models directly in the IDE.
+
+## 🚀 Features
+
+- Detects a user's current location
+- Displays free parking spots within a 500-meter radius using custom icons
+- Uses real-time geolocation API and REST integration
 
 ## 🧩 Tech Stack
+
 - [Vue 3](https://vuejs.org/)
-- [Pinia](https://pinia.vuejs.org/)
-- [Vite](https://vitejs.dev/)
+- [Pinia](https://pinia.vuejs.org/) – state management
+- [Vite](https://vitejs.dev/) – build tool
 - [TypeScript](https://www.typescriptlang.org/)
-- [ESLint](https://eslint.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/)
-- [Cypress](https://www.cypress.io/)
+- [Leaflet](https://leafletjs.com/) – interactive maps
+- [Vuetify](https://vuetifyjs.com/) – Material Design components
+- [ESLint](https://eslint.org/) – linting and code standards
+- [Vitest](https://vitest.dev/) – unit testing
+- [Cypress](https://www.cypress.io/) – E2E testing
 
-## Recommended IDE Setup
+## 🧑‍💻 Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Use [**WebStorm**](https://www.jetbrains.com/webstorm/) with:
 
-## Project Setup
+- ✅ Built-in support for Vue 3 and TypeScript
+- 🧠 [**Junie**](https://www.jetbrains.com/junie/) or [**Continue.dev**](https://continue.dev/) for AI-assisted development
+- ⚙️ [**Ollama**](https://ollama.com/) running locally to support Continue.dev in your IDE
 
-```sh
-pnpm install
+> 💡 Make sure WebStorm's JavaScript and TypeScript plugins are enabled for the best Vue + TypeScript experience.
+## 🛠 Project Setup
+
+```bash
+pnpm install       # Install dependencies
+pnpm dev           # Start the dev server
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-pnpm test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-pnpm test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-pnpm build
-pnpm test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
-# parking-fe
